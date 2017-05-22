@@ -1,0 +1,1 @@
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\ApacheThriftClient\bin\Debug\ApacheThriftClient.exe.config
