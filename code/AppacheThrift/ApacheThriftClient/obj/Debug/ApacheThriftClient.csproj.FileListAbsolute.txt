@@ -1,1 +1,6 @@
 C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\ApacheThriftClient\bin\Debug\ApacheThriftClient.exe.config
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\ApacheThriftClient\bin\Debug\ApacheThriftClient.exe
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\ApacheThriftClient\bin\Debug\ApacheThriftClient.pdb
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\ApacheThriftClient\obj\Debug\ApacheThriftClient.csprojResolveAssemblyReference.cache
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\ApacheThriftClient\obj\Debug\ApacheThriftClient.exe
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\ApacheThriftClient\obj\Debug\ApacheThriftClient.pdb

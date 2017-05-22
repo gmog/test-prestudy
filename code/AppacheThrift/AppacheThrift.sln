@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApacheThriftClient", "Apach
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApacheThriftServer", "ApacheThriftServer\ApacheThriftServer.csproj", "{FD96C4E4-8950-4EB2-AADF-81E8D297718B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestClient", "UnitTestClient\UnitTestClient.csproj", "{0D74BC58-FB51-4ADC-9AB4-DCFF7CCE870A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestServer", "UnitTestServer\UnitTestServer.csproj", "{0519FAE8-3174-450D-8DEE-F3D7355B6521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FD96C4E4-8950-4EB2-AADF-81E8D297718B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD96C4E4-8950-4EB2-AADF-81E8D297718B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD96C4E4-8950-4EB2-AADF-81E8D297718B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D74BC58-FB51-4ADC-9AB4-DCFF7CCE870A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D74BC58-FB51-4ADC-9AB4-DCFF7CCE870A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D74BC58-FB51-4ADC-9AB4-DCFF7CCE870A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D74BC58-FB51-4ADC-9AB4-DCFF7CCE870A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0519FAE8-3174-450D-8DEE-F3D7355B6521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0519FAE8-3174-450D-8DEE-F3D7355B6521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0519FAE8-3174-450D-8DEE-F3D7355B6521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0519FAE8-3174-450D-8DEE-F3D7355B6521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
