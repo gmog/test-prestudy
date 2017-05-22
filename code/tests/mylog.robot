@@ -11,9 +11,9 @@ Tee Jotain
 	Log	Log Message
 
 Tee Jotain Muuta
-	Log This is jotain muuta
+	Log	This is jotain muuta
 	
 Tee Viela Jotain Muuta
-	Log This is viela jotain muuta
+	Log	This is viela jotain muuta
 	
 	
