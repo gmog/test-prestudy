@@ -16,7 +16,7 @@ namespace ApacheThriftServer
         static void Main(string[] args)
         {
 
-            int port = 9090;
+            int port = 9091;
 
             try
             {

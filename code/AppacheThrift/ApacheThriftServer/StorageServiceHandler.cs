@@ -17,9 +17,9 @@ namespace ApacheThriftServer
         public StorageServiceHandler()
         {
             storagePointDict = new Dictionary<int, StoragePoint>();
-            storagePointDict.Add(1, new StoragePoint { StorageId = 1, Name = "S1", Description = "Storage Point 1", Value = "1000" });
-            storagePointDict.Add(2, new StoragePoint { StorageId = 2, Name = "S2", Description = "Storage Point 2", Value = "2000" });
-            storagePointDict.Add(3, new StoragePoint { StorageId = 3, Name = "S3", Description = "Storage Point 3", Value = "3000" });
+            storagePointDict.Add(0, new StoragePoint { StorageId = 1, Name = "S1", Description = "Storage Point 1", Value = "1000" });
+            storagePointDict.Add(1, new StoragePoint { StorageId = 2, Name = "S2", Description = "Storage Point 2", Value = "2000" });
+            storagePointDict.Add(2, new StoragePoint { StorageId = 3, Name = "S3", Description = "Storage Point 3", Value = "3000" });
         }
 
 
@@ -44,21 +44,24 @@ namespace ApacheThriftServer
         public string read(int id)
         {
 
-            return storagePointDict[id].ToString();
+            // return storagePointDict[id].ToString();
 
-            //if (storagePointDict.ContainsKey(id))
-            //    return storagePointDict[id].ToString();
+            if (storagePointDict.ContainsKey(id))
+                return storagePointDict[id].Value;
 
 
-            //return id + " was not found!";
+            return id + " was not found!";
 
         }
         public string write(int id, string @value)
         {
 
-            storagePointDict.Add(id, new StoragePoint {Value=value });
+            if (storagePointDict.ContainsKey(id))
+                return "Write failed!";
+            else
+                storagePointDict.Add(id, new StoragePoint { Value = value });
 
-            return "Current size of the dictionary: " + storagePointDict.Count;
+            return id + " was written! Current storage count: " + storagePointDict.Count;
 
         }
         public int multiply(int n1, int n2)

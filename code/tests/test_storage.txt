@@ -1,0 +1,17 @@
+*** Settings ***
+Library	StorageLibrary.py
+
+
+*** Test Cases ***
+My Test case
+	write storage point value	0	${arg_value}
+	${V1}=	read storage point value	0
+	Should be equal	${V1}	${arg_value}
+
+Test write and read
+	verify write and read	1	new value
+
+Test read not exisiting storage value
+	Run Keyword And Expect Error	Storage point does not exists	read storage point value	100
+
+

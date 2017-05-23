@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.1 on win32)" generated="20170523 12:46:15.311">
+<suite id="s1" name="Test Storage" source="C:\TEMP\Wapice\test-prestudy\code\tests\test_storage.txt">
+<test id="s1-t1" name="My Test case">
+<kw name="Write Storage Point Value" library="StorageLibrary">
+<arguments>
+<arg>0</arg>
+<arg>${arg_value}</arg>
+</arguments>
+<status status="PASS" starttime="20170523 12:46:16.391" endtime="20170523 12:46:17.396"></status>
+</kw>
+<kw name="Read Storage Point Value" library="StorageLibrary">
+<arguments>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${V1}</var>
+</assign>
+<msg timestamp="20170523 12:46:17.401" level="INFO">${V1} = 1000</msg>
+<status status="PASS" starttime="20170523 12:46:17.397" endtime="20170523 12:46:17.401"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${V1}</arg>
+<arg>${arg_value}</arg>
+</arguments>
+<status status="PASS" starttime="20170523 12:46:17.402" endtime="20170523 12:46:17.404"></status>
+</kw>
+<status status="PASS" starttime="20170523 12:46:16.389" endtime="20170523 12:46:17.405" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Test write and read">
+<kw name="verify write and read">
+<arguments>
+<arg>1</arg>
+<arg>new value</arg>
+</arguments>
+<msg timestamp="20170523 12:46:17.416" level="FAIL">No keyword with name 'verify write and read' found.</msg>
+<status status="FAIL" starttime="20170523 12:46:17.416" endtime="20170523 12:46:17.416"></status>
+</kw>
+<status status="FAIL" starttime="20170523 12:46:17.408" endtime="20170523 12:46:17.417" critical="yes">No keyword with name 'verify write and read' found.</status>
+</test>
+<status status="FAIL" starttime="20170523 12:46:15.315" endtime="20170523 12:46:17.421"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" id="s1" name="Test Storage">Test Storage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
