@@ -44,13 +44,13 @@ namespace ApacheThriftServer
         public string read(int id)
         {
 
-            StoragePoint sp = storagePointDict[id];
+            return storagePointDict[id].ToString();
 
-            if (sp != null)
-                sp.ToString();
+            //if (storagePointDict.ContainsKey(id))
+            //    return storagePointDict[id].ToString();
 
 
-            return id + " was not found!";
+            //return id + " was not found!";
 
         }
         public string write(int id, string @value)

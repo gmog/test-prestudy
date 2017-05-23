@@ -25,6 +25,13 @@ namespace ApacheThriftClient
 
                 transport.Open();
 
+
+
+                Console.WriteLine("Storage Point with id=" + client.read(2));
+
+
+
+
                 client.ping();
                 Console.WriteLine("ping()");
 
