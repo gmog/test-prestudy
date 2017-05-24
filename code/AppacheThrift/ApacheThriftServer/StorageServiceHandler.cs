@@ -41,6 +41,11 @@ namespace ApacheThriftServer
         }
 
 
+        public int StoragePointCount()
+        {
+            return storagePointDict.Count;
+        }
+
         public List<StoragePoint> storagePoints()
         {
 

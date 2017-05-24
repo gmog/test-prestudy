@@ -10,11 +10,13 @@ namespace UnitTestServer
     {
 
         StorageServiceHandler storageServiceHandler;
+        int count;
 
         [TestInitialize]
         public void Initialize()
         {
             storageServiceHandler = new StorageServiceHandler();
+            count = storageServiceHandler.StoragePointCount();
         }
 
 
@@ -24,9 +26,22 @@ namespace UnitTestServer
         {
             var storage = new StorageServiceHandler();
             var list = storage.storagePoints();
-            Assert.IsTrue(list.Count==3);
+            Assert.IsTrue(list.Count==3, "Storage Points Count Mismatch");
 
         }
+
+
+
+        [TestMethod]
+        public void TestClearStorage()
+        {
+            storageServiceHandler.ClearStoragePoint();
+            count = storageServiceHandler.StoragePointCount();
+            Assert.IsTrue(count == 0, "Storage Is Not Cleared!");
+
+
+        }
+
 
 
 
