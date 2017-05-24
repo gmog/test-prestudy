@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestClient", "UnitTestClient\UnitTestClient.csproj", "{0D74BC58-FB51-4ADC-9AB4-DCFF7CCE870A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestServer", "UnitTestServer\UnitTestServer.csproj", "{0519FAE8-3174-450D-8DEE-F3D7355B6521}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FD96C4E4-8950-4EB2-AADF-81E8D297718B} = {FD96C4E4-8950-4EB2-AADF-81E8D297718B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

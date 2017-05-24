@@ -1,0 +1,9 @@
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\UnitTestServer\bin\Debug\UnitTestServer.dll
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\UnitTestServer\bin\Debug\UnitTestServer.pdb
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\UnitTestServer\bin\Debug\ApacheThriftServer.exe
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\UnitTestServer\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\UnitTestServer\bin\Debug\Thrift.dll
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\UnitTestServer\bin\Debug\ApacheThriftServer.pdb
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\UnitTestServer\obj\Debug\UnitTestServer.csprojResolveAssemblyReference.cache
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\UnitTestServer\obj\Debug\UnitTestServer.dll
+C:\TEMP\Wapice\test-prestudy\code\AppacheThrift\UnitTestServer\obj\Debug\UnitTestServer.pdb

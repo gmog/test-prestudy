@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.1 on win32)" generated="20170523 15:08:45.100">
+<suite id="s1" name="Test Storage" source="C:\TEMP\Wapice\test-prestudy\code\tests\test_storage.txt">
+<test id="s1-t1" name="My Test case">
+<kw name="write storage point value">
+<arguments>
+<arg>0</arg>
+<arg>${arg_value}</arg>
+</arguments>
+<msg timestamp="20170523 15:08:47.189" level="FAIL">No keyword with name 'write storage point value' found.</msg>
+<status status="FAIL" starttime="20170523 15:08:47.189" endtime="20170523 15:08:47.189"></status>
+</kw>
+<status status="FAIL" starttime="20170523 15:08:47.182" endtime="20170523 15:08:47.191" critical="yes">No keyword with name 'write storage point value' found.</status>
+</test>
+<test id="s1-t2" name="Test write and read">
+<kw name="verify write and read">
+<arguments>
+<arg>1</arg>
+<arg>new value</arg>
+</arguments>
+<msg timestamp="20170523 15:08:47.201" level="FAIL">No keyword with name 'verify write and read' found.</msg>
+<status status="FAIL" starttime="20170523 15:08:47.201" endtime="20170523 15:08:47.201"></status>
+</kw>
+<status status="FAIL" starttime="20170523 15:08:47.194" endtime="20170523 15:08:47.203" critical="yes">No keyword with name 'verify write and read' found.</status>
+</test>
+<test id="s1-t3" name="Test read not exisiting storage value">
+<kw name="Run Keyword And Expect Error" library="BuiltIn">
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<arguments>
+<arg>Storage point does not exists</arg>
+<arg>read storage point value</arg>
+<arg>100</arg>
+</arguments>
+<kw name="read storage point value">
+<arguments>
+<arg>100</arg>
+</arguments>
+<msg timestamp="20170523 15:08:47.209" level="FAIL">No keyword with name 'read storage point value' found.</msg>
+<status status="FAIL" starttime="20170523 15:08:47.209" endtime="20170523 15:08:47.209"></status>
+</kw>
+<status status="FAIL" starttime="20170523 15:08:47.206" endtime="20170523 15:08:47.209"></status>
+</kw>
+<status status="FAIL" starttime="20170523 15:08:47.205" endtime="20170523 15:08:47.209" critical="yes">No keyword with name 'read storage point value' found.</status>
+</test>
+<status status="FAIL" starttime="20170523 15:08:45.106" endtime="20170523 15:08:47.211"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3">Critical Tests</stat>
+<stat pass="0" fail="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" id="s1" name="Test Storage">Test Storage</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170523 15:08:47.173" level="ERROR">Could not connect to any of [('::1', 9091, 0, 0), ('127.0.0.1', 9091)]</msg>
+<msg timestamp="20170523 15:08:47.177" level="ERROR">Error in file 'C:\TEMP\Wapice\test-prestudy\code\tests\test_storage.txt': Initializing test library 'StorageLibrary' with no arguments failed: Could not connect to Storage
+Traceback (most recent call last):
+  File "C:\TEMP\Wapice\test-prestudy\code\tests\lib\StorageLibrary.py", line 31, in __init__
+    raise AssertionError("Could not connect to Storage")</msg>
+</errors>
+</robot>

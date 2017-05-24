@@ -8,7 +8,7 @@ using storage;
 
 namespace ApacheThriftServer
 {
-    class StorageServiceHandler:StorageService.Iface
+    public class StorageServiceHandler:StorageService.Iface
     {
 
 
@@ -24,6 +24,8 @@ namespace ApacheThriftServer
 
 
 
+
+
        public string ping()
         {
 
@@ -31,6 +33,14 @@ namespace ApacheThriftServer
 
 
         }
+
+
+        public void ClearStoragePoint()
+        {
+            storagePointDict.Clear();
+        }
+
+
         public List<StoragePoint> storagePoints()
         {
 

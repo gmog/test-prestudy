@@ -9,6 +9,8 @@ namespace UnitTestClient
         [TestMethod]
         public void TestMethod1()
         {
+          
+           // Assert.AreEqual("Hei", "Heippa");
         }
     }
 }
